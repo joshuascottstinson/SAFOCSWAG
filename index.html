@@ -3,13 +3,428 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>joshuastinson.com</title>
+  <title>SAF/OC SWAG</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>Happy Mother's Day Babe!</h1>
-    <p><a href="https://cwg-a1k.pages.dev">Child Welfare Policy and Practice Group</a></p>
-  </main>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="header-brand">
+        <img src="patch.png" alt="SAF/OC Patch" class="header-patch" />
+        <div class="header-titles">
+          <span class="header-main">SAF/OC SWAG</span>
+          <span class="header-sub">Office of Competitive Activities</span>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <a href="#catalog">Catalog</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Gear Up, SAF/OC</h1>
+      <p>Look sharp. Compete sharper.</p>
+      <a href="#catalog" class="btn-primary">Browse the Catalog</a>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <section id="catalog" class="catalog-section">
+    <div class="container">
+      <h2 class="section-title">Browse Swag</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="apparel">Apparel</button>
+        <button class="filter-btn" data-filter="headwear">Headwear</button>
+        <button class="filter-btn" data-filter="drinkware">Drinkware</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+        <button class="filter-btn" data-filter="stickers">Stickers</button>
+        <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div class="product-grid" id="product-grid">
+
+        <div class="product-card" data-category="apparel">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">👕</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Apparel</span>
+            <h3 class="product-name">SAF/OC Polo Shirt</h3>
+            <p class="product-desc">Performance polo with embroidered unit patch. Available in navy and black.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('SAF/OC Polo Shirt', 'Performance polo with embroidered unit patch. Available in navy and black.', 'Apparel')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="apparel">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🧥</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Apparel</span>
+            <h3 class="product-name">Quarter-Zip Pullover</h3>
+            <p class="product-desc">Soft-shell quarter-zip with SAF/OC logo. Perfect for the office or range.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Quarter-Zip Pullover', 'Soft-shell quarter-zip with SAF/OC logo. Perfect for the office or range.', 'Apparel')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="apparel">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">👕</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Apparel</span>
+            <h3 class="product-name">Unit T-Shirt</h3>
+            <p class="product-desc">Classic cotton tee with SAF/OC Competitive Activities graphic print.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Unit T-Shirt', 'Classic cotton tee with SAF/OC Competitive Activities graphic print.', 'Apparel')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="headwear">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🧢</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Headwear</span>
+            <h3 class="product-name">Structured Cap</h3>
+            <p class="product-desc">Embroidered SAF/OC patch cap. Adjustable fit, available in black and navy.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Structured Cap', 'Embroidered SAF/OC patch cap. Adjustable fit, available in black and navy.', 'Headwear')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="headwear">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🪖</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Headwear</span>
+            <h3 class="product-name">Tactical Flat Bill</h3>
+            <p class="product-desc">Flat bill cap with woven patch. Velcro closure, one size fits most.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Tactical Flat Bill', 'Flat bill cap with woven patch. Velcro closure, one size fits most.', 'Headwear')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinkware">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">☕</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Drinkware</span>
+            <h3 class="product-name">Insulated Tumbler</h3>
+            <p class="product-desc">20oz double-wall tumbler with laser-engraved SAF/OC logo. Keeps drinks cold 24hrs.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Insulated Tumbler', '20oz double-wall tumbler with laser-engraved SAF/OC logo. Keeps drinks cold 24hrs.', 'Drinkware')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinkware">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🍵</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Drinkware</span>
+            <h3 class="product-name">Unit Coffee Mug</h3>
+            <p class="product-desc">Ceramic 15oz mug with SAF/OC patch art. Microwave and dishwasher safe.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Unit Coffee Mug', 'Ceramic 15oz mug with SAF/OC patch art. Microwave and dishwasher safe.', 'Drinkware')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="accessories">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">📓</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Challenge Coin</h3>
+            <p class="product-desc">Antique gold-finish challenge coin with SAF/OC Competitive Activities design.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Challenge Coin', 'Antique gold-finish challenge coin with SAF/OC Competitive Activities design.', 'Accessories')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="accessories">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🎒</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">Branded Tote Bag</h3>
+            <p class="product-desc">Heavy-duty canvas tote with unit patch print. Great for TDY and the office.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Branded Tote Bag', 'Heavy-duty canvas tote with unit patch print. Great for TDY and the office.', 'Accessories')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="apparel">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">👔</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Apparel</span>
+            <h3 class="product-name">Button-Down Collared Shirt</h3>
+            <p class="product-desc">Crisp woven button-down with embroidered SAF/OC patch on the chest. Long sleeve, available in white and light blue.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Button-Down Collared Shirt', 'Crisp woven button-down with embroidered SAF/OC patch on the chest. Long sleeve, available in white and light blue.', 'Apparel')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="apparel">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🌺</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Apparel</span>
+            <h3 class="product-name">SAF/OC Hawaiian Shirt</h3>
+            <p class="product-desc">All-over print button-up with SAF/OC patch motif woven into a tropical pattern. Short sleeve, relaxed fit.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('SAF/OC Hawaiian Shirt', 'All-over print button-up with SAF/OC patch motif woven into a tropical pattern. Short sleeve, relaxed fit.', 'Apparel')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinkware">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🥃</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Drinkware</span>
+            <h3 class="product-name">Whiskey Decanter Set</h3>
+            <p class="product-desc">Crystal-clear glass decanter with laser-engraved SAF/OC crest. Includes two matching old-fashioned glasses. Gift-boxed.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Whiskey Decanter Set', 'Crystal-clear glass decanter with laser-engraved SAF/OC crest. Includes two matching old-fashioned glasses. Gift-boxed.', 'Drinkware')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinkware">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🫗</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Drinkware</span>
+            <h3 class="product-name">Whiskey Glasses (Set of 2)</h3>
+            <p class="product-desc">Weighted crystal old-fashioned glasses with etched SAF/OC patch. Available individually or as a set.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Whiskey Glasses (Set of 2)', 'Weighted crystal old-fashioned glasses with etched SAF/OC patch. Available individually or as a set.', 'Drinkware')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinkware">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🍺</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Drinkware</span>
+            <h3 class="product-name">Decorative Stein</h3>
+            <p class="product-desc">Ceramic beer stein with SAF/OC Competitive Activities crest. Hinged pewter lid, holds 16oz.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Decorative Stein', 'Ceramic beer stein with SAF/OC Competitive Activities crest. Hinged pewter lid, holds 16oz.', 'Drinkware')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="stickers">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">⚡</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Stickers</span>
+            <h3 class="product-name">Zap (Large Sticker)</h3>
+            <p class="product-desc">Large die-cut vinyl sticker featuring the SAF/OC patch design. Weather-resistant, perfect for laptops and gear.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Zap (Large Sticker)', 'Large die-cut vinyl sticker featuring the SAF/OC patch design. Weather-resistant, perfect for laptops and gear.', 'Stickers')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="stickers">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">✨</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Stickers</span>
+            <h3 class="product-name">Mini-Zap (Small Sticker)</h3>
+            <p class="product-desc">Small die-cut vinyl sticker with SAF/OC design. Great for water bottles, notebooks, and helmets.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Mini-Zap (Small Sticker)', 'Small die-cut vinyl sticker with SAF/OC design. Great for water bottles, notebooks, and helmets.', 'Stickers')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="accessories">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🪨</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">SAF/OC Coaster</h3>
+            <p class="product-desc">Stone coaster with cork backing and full-color SAF/OC patch print. Sold as a set of 4.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('SAF/OC Coaster', 'Stone coaster with cork backing and full-color SAF/OC patch print. Sold as a set of 4.', 'Accessories')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="seasonal">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <span class="placeholder-icon">🎄</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Seasonal</span>
+            <h3 class="product-name">Christmas Ornament</h3>
+            <p class="product-desc">Round ceramic ornament with SAF/OC patch art and gold ribbon hanger. Individually boxed — makes a great gift.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Christmas Ornament', 'Round ceramic ornament with SAF/OC patch art and gold ribbon hanger. Individually boxed — makes a great gift.', 'Seasonal')">Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /product-grid -->
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="container about-inner">
+      <img src="patch.png" alt="SAF/OC Patch" class="about-patch" />
+      <div class="about-text">
+        <h2>About SAF/OC</h2>
+        <p>SAF/OC is the Department of the Air Force's Office of Competitive Activities. This store is the official source for unit-branded merchandise.</p>
+        <p>All items are for members of the SAF/OC community. Pricing and ordering details will be posted as items are finalized.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Request Info / Place Order</h2>
+      <p class="contact-intro">Interested in an item or want to place a bulk order? Fill out the form below.</p>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.name@us.af.mil" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="item">Item(s) of Interest</label>
+          <input type="text" id="item" name="item" placeholder="e.g. Polo Shirt, Challenge Coin..." />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Quantity, size, questions..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Request</button>
+      </form>
+      <div id="form-success" class="form-success" style="display:none;">
+        Request sent! We'll be in touch soon.
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 SAF/OC Competitive Activities</span>
+      <p class="footer-disclaimer">This store is not sponsored or endorsed by the U.S. Government or the Department of the Air Force. It is sustained by members acting in their informal capacity, dedicated to enhancing morale and esprit de corps for Air Force Competitive Activities.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal-overlay" class="modal-overlay" style="display:none;" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <span id="modal-category" class="product-category"></span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+      <p class="modal-price-note">Pricing and availability TBD. Use the <a href="#contact">contact form</a> to express interest.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
