@@ -1,3 +1,35 @@
+// Inject request checkboxes into every product card
+document.querySelectorAll('.product-card').forEach(card => {
+  const name = card.querySelector('.product-name').textContent.trim();
+  const footer = card.querySelector('.product-footer');
+  const label = document.createElement('label');
+  label.className = 'request-check';
+  label.innerHTML = `<input type="checkbox" class="item-checkbox" value="${name}" /> Add to request`;
+  footer.after(label);
+});
+
+// Floating badge
+const badge = document.createElement('button');
+badge.className = 'request-badge';
+badge.innerHTML = `<span class="request-badge-count" id="badge-count">0</span> View Request`;
+badge.addEventListener('click', () => {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
+document.body.appendChild(badge);
+
+document.addEventListener('change', e => {
+  if (!e.target.classList.contains('item-checkbox')) return;
+  const label = e.target.closest('.request-check');
+  if (label) {
+    label.classList.toggle('checked', e.target.checked);
+    label.lastChild.textContent = e.target.checked ? ' ✓ Added' : ' Add to request';
+  }
+  const checked = Array.from(document.querySelectorAll('.item-checkbox:checked'));
+  document.getElementById('item').value = checked.map(cb => cb.value).join(', ');
+  document.getElementById('badge-count').textContent = checked.length;
+  badge.style.display = checked.length ? 'flex' : 'none';
+});
+
 // Category filter
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {

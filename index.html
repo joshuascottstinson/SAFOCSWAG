@@ -53,9 +53,12 @@
       <div class="product-grid" id="product-grid">
 
         <div class="product-card" data-category="apparel">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">👕</span>
+          <div class="product-img-wrap has-image">
+            <div class="flip-wrap">
+              <div class="flip-inner">
+                <div class="flip-front"><img src="product-images/Polo-1.png" alt="SAF/OC Polo Shirt front" /></div>
+                <div class="flip-back"><img src="product-images/Polo-2-buttons.png" alt="SAF/OC Polo Shirt detail" /></div>
+              </div>
             </div>
           </div>
           <div class="product-info">
@@ -87,10 +90,8 @@
         </div>
 
         <div class="product-card" data-category="apparel">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">👕</span>
-            </div>
+          <div class="product-img-wrap has-image">
+            <img class="product-img" src="product-images/T Shirt.png" alt="Unit T-Shirt" />
           </div>
           <div class="product-info">
             <span class="product-category">Apparel</span>
@@ -104,10 +105,8 @@
         </div>
 
         <div class="product-card" data-category="headwear">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">🧢</span>
-            </div>
+          <div class="product-img-wrap has-image">
+            <img class="product-img" src="product-images/hat.png" alt="Structured Cap" />
           </div>
           <div class="product-info">
             <span class="product-category">Headwear</span>
@@ -155,18 +154,41 @@
         </div>
 
         <div class="product-card" data-category="drinkware">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">🍵</span>
+          <div class="product-img-wrap has-image">
+            <div class="flip-wrap">
+              <div class="flip-inner">
+                <div class="flip-front"><img src="product-images/modern mug front.png" alt="Modern Coffee Mug front" /></div>
+                <div class="flip-back"><img src="product-images/modern mug reverse.png" alt="Modern Coffee Mug back" /></div>
+              </div>
             </div>
           </div>
           <div class="product-info">
             <span class="product-category">Drinkware</span>
-            <h3 class="product-name">Unit Coffee Mug</h3>
-            <p class="product-desc">Ceramic 15oz mug with SAF/OC patch art. Microwave and dishwasher safe.</p>
+            <h3 class="product-name">Modern Coffee Mug</h3>
+            <p class="product-desc">Sleek 15oz ceramic mug with SAF/OC patch art. Microwave and dishwasher safe.</p>
             <div class="product-footer">
               <span class="product-price">Price TBD</span>
-              <button class="btn-card" onclick="openModal('Unit Coffee Mug', 'Ceramic 15oz mug with SAF/OC patch art. Microwave and dishwasher safe.', 'Drinkware')">Details</button>
+              <button class="btn-card" onclick="openModal('Modern Coffee Mug', 'Sleek 15oz ceramic mug with SAF/OC patch art. Microwave and dishwasher safe.', 'Drinkware')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinkware">
+          <div class="product-img-wrap has-image">
+            <div class="flip-wrap">
+              <div class="flip-inner">
+                <div class="flip-front"><img src="product-images/mug legacy front.png" alt="Decorative Coffee Mug front" /></div>
+                <div class="flip-back"><img src="product-images/mug legacy reverse.png" alt="Decorative Coffee Mug back" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Drinkware</span>
+            <h3 class="product-name">Decorative Coffee Mug</h3>
+            <p class="product-desc">Collectible ceramic mug featuring detailed SAF/OC Competitive Activities artwork. Display-worthy and fully functional.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('Decorative Coffee Mug', 'Collectible ceramic mug featuring detailed SAF/OC Competitive Activities artwork. Display-worthy and fully functional.', 'Drinkware')">Details</button>
             </div>
           </div>
         </div>
@@ -274,27 +296,28 @@
         </div>
 
         <div class="product-card" data-category="drinkware">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">🍺</span>
+          <div class="product-img-wrap has-image">
+            <div class="flip-wrap">
+              <div class="flip-inner">
+                <div class="flip-front"><img src="product-images/decorative stein front.png" alt="Decorative Stein front" /></div>
+                <div class="flip-back"><img src="product-images/decorative stein reverse.png" alt="Decorative Stein back" /></div>
+              </div>
             </div>
           </div>
           <div class="product-info">
             <span class="product-category">Drinkware</span>
             <h3 class="product-name">Decorative Stein</h3>
-            <p class="product-desc">Ceramic beer stein with SAF/OC Competitive Activities crest. Hinged pewter lid, holds 16oz.</p>
+            <p class="product-desc">Ceramic stein with SAF/OC Competitive Activities crest. Hinged pewter lid, holds 16oz.</p>
             <div class="product-footer">
               <span class="product-price">Price TBD</span>
-              <button class="btn-card" onclick="openModal('Decorative Stein', 'Ceramic beer stein with SAF/OC Competitive Activities crest. Hinged pewter lid, holds 16oz.', 'Drinkware')">Details</button>
+              <button class="btn-card" onclick="openModal('Decorative Stein', 'Ceramic stein with SAF/OC Competitive Activities crest. Hinged pewter lid, holds 16oz.', 'Drinkware')">Details</button>
             </div>
           </div>
         </div>
 
         <div class="product-card" data-category="stickers">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">⚡</span>
-            </div>
+          <div class="product-img-wrap has-image">
+            <img class="product-img" src="product-images/large zaps.png" alt="Zap Large Sticker" />
           </div>
           <div class="product-info">
             <span class="product-category">Stickers</span>
@@ -308,10 +331,8 @@
         </div>
 
         <div class="product-card" data-category="stickers">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">✨</span>
-            </div>
+          <div class="product-img-wrap has-image">
+            <img class="product-img" src="product-images/small zaps.png" alt="Mini-Zap Small Sticker" />
           </div>
           <div class="product-info">
             <span class="product-category">Stickers</span>
@@ -325,10 +346,8 @@
         </div>
 
         <div class="product-card" data-category="accessories">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">🪨</span>
-            </div>
+          <div class="product-img-wrap has-image">
+            <img class="product-img" src="product-images/coaster.png" alt="SAF/OC Coaster" />
           </div>
           <div class="product-info">
             <span class="product-category">Accessories</span>
@@ -342,18 +361,51 @@
         </div>
 
         <div class="product-card" data-category="seasonal">
-          <div class="product-img-wrap">
-            <div class="product-img-placeholder">
-              <span class="placeholder-icon">🎄</span>
+          <div class="product-img-wrap has-image">
+            <div class="flip-wrap">
+              <div class="flip-inner">
+                <div class="flip-front"><img src="product-images/ornament front.png" alt="Holiday Ornament front" /></div>
+                <div class="flip-back"><img src="product-images/ornament back.png" alt="Holiday Ornament back" /></div>
+              </div>
             </div>
           </div>
           <div class="product-info">
             <span class="product-category">Seasonal</span>
-            <h3 class="product-name">Christmas Ornament</h3>
+            <h3 class="product-name">Holiday Ornament</h3>
             <p class="product-desc">Round ceramic ornament with SAF/OC patch art and gold ribbon hanger. Individually boxed — makes a great gift.</p>
             <div class="product-footer">
               <span class="product-price">Price TBD</span>
-              <button class="btn-card" onclick="openModal('Christmas Ornament', 'Round ceramic ornament with SAF/OC patch art and gold ribbon hanger. Individually boxed — makes a great gift.', 'Seasonal')">Details</button>
+              <button class="btn-card" onclick="openModal('Holiday Ornament', 'Round ceramic ornament with SAF/OC patch art and gold ribbon hanger. Individually boxed — makes a great gift.', 'Seasonal')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="accessories">
+          <div class="product-img-wrap has-image">
+            <img class="product-img" src="product-images/knit patch.png" alt="SAF/OC Knit Patch" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">SAF/OC Knit Patch</h3>
+            <p class="product-desc">Embroidered knit patch with SAF/OC Competitive Activities design. Iron-on or sew-on backing.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('SAF/OC Knit Patch', 'Embroidered knit patch with SAF/OC Competitive Activities design. Iron-on or sew-on backing.', 'Accessories')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="accessories">
+          <div class="product-img-wrap has-image">
+            <img class="product-img" src="product-images/ocp knit patch.png" alt="SAF/OC OCP Knit Patch" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name">SAF/OC OCP Knit Patch</h3>
+            <p class="product-desc">OCP-colorway embroidered knit patch for uniform wear. SAF/OC Competitive Activities design. Iron-on or sew-on backing.</p>
+            <div class="product-footer">
+              <span class="product-price">Price TBD</span>
+              <button class="btn-card" onclick="openModal('SAF/OC OCP Knit Patch', 'OCP-colorway embroidered knit patch for uniform wear. SAF/OC Competitive Activities design. Iron-on or sew-on backing.', 'Accessories')">Details</button>
             </div>
           </div>
         </div>

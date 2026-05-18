@@ -1,1 +1,14 @@
 .claude/
+node_modules/
+images-clean/
+package.json
+package-lock.json
+process-images.js
+finalize-images.js
+
+# Raw source photos
+*.jpeg
+*.jpg
+
+# remove.bg working files
+*-removebg-preview.png

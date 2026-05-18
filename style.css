@@ -212,11 +212,13 @@ header {
 
 .product-img-wrap {
   background: linear-gradient(135deg, var(--navy) 0%, #0d2060 100%);
-  height: 180px;
+  height: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
+.product-img-wrap.has-image { background: #f8f9fb; }
 .product-img-placeholder {
   display: flex;
   align-items: center;
@@ -225,6 +227,43 @@ header {
   height: 100%;
 }
 .placeholder-icon { font-size: 4rem; opacity: 0.7; }
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
+
+/* Flip card for front/reverse items */
+.flip-wrap {
+  width: 100%;
+  height: 100%;
+  perspective: 900px;
+}
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.55s ease;
+}
+.flip-wrap:hover .flip-inner { transform: rotateY(180deg); }
+.flip-front, .flip-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fb;
+}
+.flip-back { transform: rotateY(180deg); }
+.flip-front img, .flip-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
 
 .product-info {
   padding: 18px 20px 20px;
@@ -431,6 +470,63 @@ footer {
   max-width: 680px;
   line-height: 1.5;
   letter-spacing: 0.01em;
+}
+
+/* ── Request checkbox ── */
+.request-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gray-mid);
+  cursor: pointer;
+  user-select: none;
+  margin-top: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+.request-check input[type="checkbox"] {
+  accent-color: var(--gold);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.request-check.checked { color: var(--navy); }
+
+/* ── Floating request badge ── */
+.request-badge {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  background: var(--gold);
+  color: var(--black);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 14px 22px;
+  border-radius: 50px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  z-index: 150;
+  border: none;
+  transition: background 0.2s, transform 0.15s;
+}
+.request-badge:hover { background: var(--gold-light); transform: translateY(-2px); }
+.request-badge-count {
+  background: var(--black);
+  color: var(--gold);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
 }
 
 /* ── Responsive ── */
